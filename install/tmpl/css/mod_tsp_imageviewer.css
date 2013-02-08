@@ -1,0 +1,122 @@
+#TSP_IV_wrapper {
+	padding: 10px;
+	background: #f0f0f0;
+	border: 1px solid #ccc;
+	overflow: hidden;
+	margin: 0 auto;
+
+	background: #1d1d1d;
+	margin: 0; padding: 0;
+	font: 10px normal Arial, sans-serif;
+}
+
+#TSP_IV_wrapper * {margin: 0; padding: 0; outline: none;}
+
+#TSP_IV_wrapper img {border: none;}
+
+#TSP_IV_wrapper a {color: #fff;}
+
+/*--Main Image Preview--*/
+#TSP_IV_wrapper .main_image {
+	height: 100%;
+	float: left;
+	background: #333;
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+}
+#TSP_IV_wrapper .main_image p.title {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+}
+#TSP_IV_wrapper .main_image p {
+	font-size: 12px;
+	padding: 10px;	margin: 0;
+	line-height: 1.6em;
+}
+#TSP_IV_wrapper .block small {
+	padding: 0 0 0 20px;
+	font-size: 1em;
+	background-image: url(../images/project.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+}
+#TSP_IV_wrapper .main_image .block small {margin-left: 10px;}
+#TSP_IV_wrapper .main_image .desc{
+	position: absolute;
+	bottom: 0;	left: 0;
+	width: 100%;
+	display: none;
+}
+#TSP_IV_wrapper .main_image .block{
+	width: 100%;
+	background: #111;
+	border-top: 1px solid #000;
+}
+#TSP_IV_wrapper .main_image a.collapse {
+	height: 21px;
+	width: 75px;
+	text-indent: -99999px;
+	position: absolute;
+    top: -21px;
+    right: 10px;
+	background-image: url(../images/btn_collapse.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#TSP_IV_wrapper .main_image a.show {background-position: left bottom;} 
+
+#TSP_IV_wrapper .image_thumb {
+	height: 100%;
+	float: left;
+	background: #f0f0f0;
+	border-right: 1px solid #fff;
+	border-top: 1px solid #ccc;
+}
+#TSP_IV_wrapper .image_thumb img {
+	border: 1px solid #ccc; 
+	padding: 2px; 
+	background: #fff; 
+	float: left;
+}
+#TSP_IV_wrapper .image_thumb ul {
+	margin: 0; padding: 0;
+	list-style: none;
+}
+#TSP_IV_wrapper .image_thumb ul li{
+	margin: 0;
+	padding: 7px 0px 7px 5px;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	background-color: #f0f0f0;
+	background-image: url(../images/nav_a.gif);
+	background-repeat: repeat-x;
+}
+#TSP_IV_wrapper .image_thumb ul li.hover {
+	background: #ddd;
+	cursor: pointer;
+}
+#TSP_IV_wrapper .image_thumb ul li.active {
+	background: #fff;
+	cursor: default;
+}
+#TSP_IV_wrapper html .image_thumb ul li p.title {
+	font-size: 1.5em; 
+	margin: 5px 0; padding: 0;
+}
+#TSP_IV_wrapper .image_thumb ul li .block {
+	float: left; 
+	margin-left: 10px;
+	padding: 0;
+}	
+#TSP_IV_wrapper .image_thumb ul li p.proj_desc{display: none;}
+
+#TSP_IV_wrapper #image_preview{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
