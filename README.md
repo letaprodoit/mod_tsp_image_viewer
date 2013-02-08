@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Image Viewer (Joomla! Module) 1.0
 -------
 Image Viewer (Joomla! Module) allows users to view project images in a jquery box. 
