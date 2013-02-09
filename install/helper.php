@@ -18,9 +18,11 @@ class ModTSPImageViewerHelper
 {
     private static $projectXml = "modules/mod_tsp_imageviewer/mod_tsp_imageviewer.projects.xml";
     
-    /**
+    /***********
+     *
      * Returns a project by ID
-    */
+     *
+     ***********/
     public static function getProject($pID)
     {
         $project = null;
@@ -38,9 +40,11 @@ class ModTSPImageViewerHelper
         return $project;
     } //end getProject
  
-    /**
+    /***********
+     *
      * Returns all projects
-    */
+     *
+     ***********/
     public static function getProjects($exclude = array())
     {
         $projects = array();
