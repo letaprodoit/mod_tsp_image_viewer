@@ -21,15 +21,14 @@ defined('_JEXEC') or die('Restricted access'); // no direct access
 		
 			$hide = 'visibility: hidden;';
 			
-			if ((string)$default_project->attributes()->id == (string)$aproject->attributes()->id)
+			if ((string)$default_project->attributes()->id == (string)$aproject->attributes()->id):
 				$hide = '';
+			endif;
 		?>
 		
 			<div id="image_preview" class="image<?php echo $aproject->attributes()->id;?>" style="<?php echo $hide;?> width: 100%; height: 100%;
 				background-image: url(<?php echo $aproject->image; ?>);"></div>
-		<?php
-		 
-		endforeach; ?>
+		<?php endforeach; ?>
 		<div class="desc" style="display: block; ">
 			<a href="#" class="collapse">Close Me!</a>
 			<div class="block" style="opacity: 0.65; margin-bottom: 0px; ">
@@ -47,8 +46,9 @@ defined('_JEXEC') or die('Restricted access'); // no direct access
 				
 				$class = '';
 				
-				if ((string)$default_project->attributes()->id == (string)$aproject->attributes()->id)
+				if ((string)$default_project->attributes()->id == (string)$aproject->attributes()->id):
 					$class = 'active';
+				endif;
 			?>
 				<li id="<?php echo $aproject->attributes()->id;?>" class="<?php echo $class; ?>">
 					<a href="#"> 
