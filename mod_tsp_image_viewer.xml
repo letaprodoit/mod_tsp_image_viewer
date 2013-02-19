@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install version="1.6.0" type="module" method="upgrade">
+<extension version="1.6.0" type="module" method="upgrade" client="site">
     <!-- Name of the Module -->
 	<name>The Software People - Image Viewer</name> 
  
@@ -30,8 +30,8 @@
     <!-- Listing of all files that should be installed for the module to function -->
 	<files>
         <!-- The "module" attribute signifies that this is the main controller file -->
-		<filename module="mod_tsp_imageviewer">mod_tsp_imageviewer.php</filename>
-		<filename>mod_tsp_imageviewer.projects.xml</filename>
+		<filename module="mod_tsp_image_viewer">mod_tsp_image_viewer.php</filename>
+		<filename>mod_tsp_image_viewer.projects.xml</filename>
 		<filename>index.html</filename>
 		<filename>helper.php</filename>
 		<filename>LICENSE</filename>
@@ -39,9 +39,9 @@
 		<folder>tmpl/</folder>
 		<folder>assets/</folder>
 	</files>
-    <languages>
-		<language tag="en-GB">language/en-GB/en-GB.mod_tsp_imageviewer.ini</language>
-    </languages>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_tsp_image_viewer.ini</language>
+	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -54,7 +54,7 @@
 				<field
 					name="viewer_height"
 					type="text"
-					default="300"
+					default="310"
 					label="MOD_TSP_IMAGEVIEWER_FIELD_VIEW_HEIGHT_LABEL"
 					description="MOD_TSP_IMAGEVIEWER_FIELD_VIEW_HEIGHT_DESC" />
 				<field

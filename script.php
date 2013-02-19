@@ -14,7 +14,7 @@
 
 defined('_JEXEC') or die('Restricted access');
 
-class mod_tsp_imageviewerInstallerScript
+class mod_tsp_image_viewerInstallerScript
 {
 	function preflight($type, $parent)
 	{
@@ -36,4 +36,4 @@ class mod_tsp_imageviewerInstallerScript
 		JFile::delete($dir . $cleanManifestFile);
 		JFile::copy($dir . '../' . $cleanManifestFile, $dir . $cleanManifestFile);
 	}//end updateManifest
-}//end mod_tsp_imageviewerInstallerScript
+}//end mod_tsp_image_viewerInstallerScript
