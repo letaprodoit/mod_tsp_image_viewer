@@ -3,7 +3,7 @@
  * TSP Image Viewer Joomla! module
  *
  * @package		TSP Image Viewer Joomla! module
- * @filename	mod_tsp_imageviewer.php
+ * @filename	mod_tsp_image_viewer.php
  * @version		1.0.0
  * @author		Sharron Denice, The Software People, LLC on 2013/02/09
  * @copyright	Copyright © 2013 The Software People, LLC (www.thesoftwarepeople.com). All rights reserved
@@ -30,10 +30,10 @@ $default_project = ModTSPImageViewerHelper::getProject(0);
 $all_projects = ModTSPImageViewerHelper::getProjects();
  
 $document = JFactory::getDocument();
-$document->addScript('modules/mod_tsp_imageviewer/tmpl/js/jquery-1.3.2.min.js');
-$document->addScript('modules/mod_tsp_imageviewer/tmpl/js/mod_tsp_imageviewer.js');
-$document->addStyleSheet('modules/mod_tsp_imageviewer/tmpl/css/mod_tsp_imageviewer.css');
+$document->addScript('modules/mod_tsp_image_viewer/tmpl/js/jquery-1.3.2.min.js');
+$document->addScript('modules/mod_tsp_image_viewer/tmpl/js/mod_tsp_image_viewer.js');
+$document->addStyleSheet('modules/mod_tsp_image_viewer/tmpl/css/mod_tsp_image_viewer.css');
 
 // Step #4: include the template for display
-require(JModuleHelper::getLayoutPath('mod_tsp_imageviewer'));
+require(JModuleHelper::getLayoutPath('mod_tsp_image_viewer'));
 ?>

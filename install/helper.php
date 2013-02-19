@@ -16,7 +16,7 @@ defined('_JEXEC') or die('Direct Access to this location is not allowed.');
  
 class ModTSPImageViewerHelper
 {
-    private static $projectXml = "modules/mod_tsp_imageviewer/mod_tsp_imageviewer.projects.xml";
+    private static $projectXml = "modules/mod_tsp_image_viewer/mod_tsp_image_viewer.projects.xml";
     
     /***********
      *
