@@ -54,7 +54,7 @@
 				<field
 					name="viewer_height"
 					type="text"
-					default="300"
+					default="310"
 					label="MOD_TSP_IMAGEVIEWER_FIELD_VIEW_HEIGHT_LABEL"
 					description="MOD_TSP_IMAGEVIEWER_FIELD_VIEW_HEIGHT_DESC" />
 				<field
