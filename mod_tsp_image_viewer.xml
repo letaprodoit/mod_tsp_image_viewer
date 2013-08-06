@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.6.0" type="module" method="upgrade" client="site">
+<extension version="1.0.0" type="module" method="upgrade" client="site">
     <!-- Name of the Module -->
 	<name>The Software People - Image Viewer</name> 
  
@@ -7,13 +7,13 @@
 	<author>The Software People, LLC</author> 
  
     <!-- Version Date of the Module -->
-	<creationDate>01 January 2013</creationDate> 
+	<creationDate>05 August 2013</creationDate> 
  
     <!-- Copyright information -->
 	<copyright>All rights reserved by The Software People, LLC 2013.</copyright> 
  
     <!-- License Information -->
-	<license>APACHE 2.0</license> 
+	<license>GNU PL 3.0</license> 
  
     <!-- Author's email address -->
 	<authorEmail>info@thesoftwarepeople.com</authorEmail> 
