@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TSP Image Viewer" default="copy_all" basedir=".">
+    <property name="version"		value="1.0.0" />
+    <property name="name"  			value="mod_tsp_image_viewer" />
+    <property name="module_test"	value="/Users/SharronDenice/Sites/_testsites/joomla_latest/modules/${name}" />
+    <property name="lang_test"  	value="/Users/SharronDenice/Sites/_testsites/joomla_latest/language" />
+    <property name="module_live"	value="/Users/SharronDenice/Sites/www.lazygirlcreations.com/modules/${name}" />
+    <property name="lang_live"  	value="/Users/SharronDenice/Sites/www.lazygirlcreations.com/language" />
+    <property name="deploy"  		value="/Users/SharronDenice/Sites/www.thesoftwarepeople.com/plugins/joomla/${name}" />
+ 
+    <!-- Fileset for all files -->
+    <fileset dir="${project.basedir}" id="allfiles">
+        <include name="install/*" />
+        <include name="install/assets/*" />
+        <include name="install/assets/images/*" />
+        <include name="install/language/*" />
+        <include name="install/language/en-GB/*" />
+        <include name="install/tmpl/*" />
+        <include name="install/tmpl/css/*" />
+        <include name="install/tmpl/images/*" />
+        <include name="install/tmpl/js/*" />
+        <include name="*.php" />
+        <include name="*.html" />
+        <include name="*.xml" />
+        <include name="LICENSE*" />
+        <include name="README*" />
+    </fileset>
+
+    <!-- Fileset for install files -->
+    <fileset dir="${project.basedir}/install" id="installfiles">
+        <include name="assets/*" />
+        <include name="assets/images/*" />
+        <include name="tmpl/*" />
+        <include name="tmpl/css/*" />
+        <include name="tmpl/images/*" />
+        <include name="tmpl/js/*" />
+        <include name="*.php" />
+        <include name="*.html" />
+        <include name="*.xml" />
+        <include name="LICENSE*" />
+        <include name="README*" />
+    </fileset>
+ 
+    <!-- Fileset for all language files -->
+    <fileset dir="${project.basedir}/install/language" id="langfiles">
+        <include name="en-GB/*" />
+    </fileset>
+
+    <!-- copy_all Target -->
+    <target name="copy_all" description="copy all files target">
+        <echo message="Copying files to TEST project..." />
+        <copy todir="${module_test}">
+            <fileset refid="installfiles" />
+        </copy>
+        <echo message="Copying language files to TEST project..." />
+        <copy todir="${lang_test}">
+            <fileset refid="langfiles" />
+        </copy>
+        <echo message="Copying files to LIVE project..." />
+        <copy todir="${module_live}">
+            <fileset refid="installfiles" />
+        </copy>
+        <echo message="Copying language files to LIVE project..." />
+        <copy todir="${lang_live}">
+            <fileset refid="langfiles" />
+        </copy>
+        <delete file="../${name}.zip" />
+		<zip destfile="../${name}.zip">
+            <fileset refid="allfiles" />
+        </zip>
+        <delete file="${deploy}/${name}_${version}_Package.zip" />
+		<zip destfile="${deploy}/${name}_${version}_Package.zip">
+            <fileset refid="allfiles" />
+        </zip>
+    </target>
+</project>
