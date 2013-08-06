@@ -45,6 +45,6 @@
 		<language tag="en-GB">install/language/en-GB/en-GB.mod_tsp_image_viewer.sys.ini</language>
 	</languages>
 	<updateservers>
-	   <server type="collection">http://www.thesoftwarepeople.com/plugins/joomla/plugins.xml</server>
+	   <server type="collection" priority="1" name="The Software Peopple Modules/Components">http://www.thesoftwarepeople.com/plugins/joomla/plugins.xml</server>
 	</updateservers>
 </extension>
