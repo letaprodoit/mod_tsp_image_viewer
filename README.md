@@ -1,6 +1,6 @@
-Image Viewer (Joomla! Module) 1.0
+Image Viewer for Joomla!
 -------
-Image Viewer (Joomla! Module) allows users to view project images in a jquery box. 
+Image Viewer for Joomla! allows users to view project images in a jquery box. 
 Display your favorite images or showcase your latest web design projects.
 
 For up-to-date installation and setup notes, visit the FAQ:
@@ -26,7 +26,7 @@ For up-to-date installation and setup notes, visit the FAQ:
 
 *REPORTING ISSUES*
 
-Thank you for downloading the Image Viewer (Joomla! Module) 1.0
+Thank you for downloading the Image Viewer for Joomla!
 If you find any issues, please report them in the issue tracker on our website:
 [http://lab.thesoftwarepeople.com/tracker/joomla-iv](http://lab.thesoftwarepeople.com/tracker/joomla-iv)
 
@@ -35,11 +35,11 @@ If you find any issues, please report them in the issue tracker on our website:
 
 Copyright 2013 The Software People, LLC
 
-Licensed under the Apache License, Version 2.0 (the "License");
+Licensed under the GNU Public License, Version 3.0 (the "License");
 you may not use this work except in compliance with the License.
 You may obtain a copy of the License in the LICENSE file, or at:
 
-  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+  [http://www.gnu.org/licenses/gpl-3.0.html](http://www.gnu.org/licenses/gpl-3.0.html)
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
