@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="1.0.0" type="module" method="upgrade" client="site">
+<extension version="3.0" type="module" method="upgrade" client="site">
     <!-- Name of the Module -->
 	<name>The Software People - Image Viewer</name> 
  

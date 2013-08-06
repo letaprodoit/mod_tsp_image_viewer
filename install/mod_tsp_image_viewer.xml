@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install version="1.0.0" type="module" method="upgrade">
+<extension version="3.0" type="module" method="upgrade" client="site">
     <!-- Name of the Module -->
 	<name>The Software People - Image Viewer</name> 
  
@@ -39,9 +39,9 @@
 		<folder>tmpl/</folder>
 		<folder>assets/</folder>
 	</files>
-    <languages>
+	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_tsp_image_viewer.ini</language>
-    </languages>
+	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
@@ -78,4 +78,7 @@
 			</fieldset>
 		</fields>
 	</config>
-</install>
+	<updateservers>
+	   <server type="collection">http://www.thesoftwarepeople.com/plugins/joomla/plugins.xml</server>
+	</updateservers>
+</extension>
